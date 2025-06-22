@@ -19,7 +19,7 @@ jobs:
         java-version: 17
 
     - name: Give permission to gradlew
-      run: chmod +x ./gradlew
+      run: bash gradlew assembleDebug
 
     - name: Build APK
       run: ./gradlew assembleDebug
